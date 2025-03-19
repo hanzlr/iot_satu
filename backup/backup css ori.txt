@@ -1,0 +1,96 @@
+/* STYLE UMUM CSS */
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #757591;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #000000;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgb(244, 241, 241), 0 6px 20px 0 rgb(255, 255, 255);
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Style logo Universitas
+.university-logo {
+  background-color: #000000;
+  display: block;
+  margin: 0 auto 20px; /* Gambar berada di tengah dengan jarak bawah 20px */
+  /* width: 300px;        /* Atur ukuran gambar agar tidak terlalu besar */
+  /* height: auto;        /* Pertahankan rasio aspek gambar */
+/* }
+ 
+/* Style logo Universitas */
+.university-logo {
+  width: 300px;   /* ukuran gambar */
+  height: auto;
+}
+
+/* logo kiri */
+.left-logo {
+  margin-right: 30px;
+}
+
+/* logo kanan */
+.right-logo {
+  margin-left: 30px;
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Style tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+th {
+  background-color: #8f9391;
+  color: white;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style responsivitas */
+@media (max-width: 600px) {
+  th, td {
+    padding: 8px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}

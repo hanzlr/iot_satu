@@ -1,0 +1,182 @@
+/* STYLE UMUM CSS */
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #757591;
+  /* Warna latar belakang */
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+}
+
+.divider {
+  border: none;
+  border-top: 2px solid white;
+  margin: 20px 0;
+}
+
+.container {
+  background-color: #000000;
+  /* Warna latar belakang kontainer */
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgb(244, 241, 241), 0 6px 20px 0 rgb(255, 255, 255);
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Style logo */
+.university-logo {
+  width: 300px;
+  height: auto;
+}
+
+.left-logo {
+  margin-right: 30px;
+}
+
+.right-logo {
+  margin-left: 30px;
+}
+
+h1 {
+  color: #ffffff;
+  /* Warna judul */
+  margin-bottom: 20px;
+}
+
+/* Gaya untuk paragraf dan teks */
+p {
+  color: #ffffff;
+  /* Ganti dengan warna teks yang diinginkan */
+  padding: 10px;
+  /* Memberikan ruang dalam paragraf */
+  margin: 10px 0;
+  /* Ruang antar paragraf */
+}
+
+.contact-section {
+  text-align: left;
+  margin-top: auto;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  vertical-align: center;
+  margin-right: 5px;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  /* Warna default link (putih) */
+  text-decoration: underline;
+  /* Menghilangkan garis bawah */
+  text-decoration-thickness: auto;
+}
+
+.link {
+  position: relative;
+  color: rgb(68, 138, 231);
+  /* Warna default link (biru) */
+  text-decoration: none;
+  /* Menghilangkan garis bawah */
+  text-decoration-thickness: auto;
+  transition: color 0.3s ease, transform 0.3s ease;
+  /* Transisi untuk warna dan transformasi */
+}
+
+.link::after {
+  content: "";
+  /* Membuat elemen setelah link */
+  position: absolute;
+  /* Posisi absolut untuk animasi */
+  left: 0;
+  /* Posisi garis bawah di kiri */
+  bottom: 0;
+  /* Garis bawah di bawah teks */
+  width: 100%;
+  /* Lebar garis sama dengan lebar teks */
+  height: 2px;
+  /* Tinggi garis */
+  background-color: #ffffff;
+  /* Warna garis */
+  transform: scaleX(0);
+  /* Awalnya garis tidak terlihat */
+  transition: transform 0.3s ease;
+  /* Transisi halus saat berubah */
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+  /* Memperbesar garis saat hover */
+}
+
+/* Style responsivitas */
+@media (max-width: 600px) {
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* Gaya untuk navigasi */
+nav {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+  /*
+  margin: auto 10px; 
+  color: white;
+  */
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s ease;
+  /* Transisi halus */
+}
+
+nav ul li a:hover {
+  background-color: #ddd;
+  color: black;
+  transform: scaleX(1.05);
+  /* Efek pembesaran saat hover */
+}
+
+/* Mengatur untuk responsif */
+@media screen and (max-width: 600px) {
+  nav ul li {
+    float: none;
+  }
+}

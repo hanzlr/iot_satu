@@ -1,0 +1,141 @@
+/* STYLE UMUM CSS */
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #757591;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Ubah menjadi flex-start agar konten tidak terlalu ke tengah */
+  height: auto; /* Ubah menjadi auto untuk menyesuaikan tinggi konten */
+}
+
+.divider {
+  border: none; /* Menghapus garis default */
+  border-top: 2px solid white; /* Garis atas berwarna putih */
+  margin: 20px 0; /* Jarak atas dan bawah */
+}
+
+.container {
+  background-color: #000000;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgb(244, 241, 241), 0 6px 20px 0 rgb(255, 255, 255);
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Style logo */
+.university-logo {
+  width: 300px;                           /* ukuran gambar */
+  height: auto;
+}
+
+/* logo kiri */
+.left-logo {
+  margin-right: 30px;
+}
+
+/* logo kanan */
+.right-logo {
+  margin-left: 30px;
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Style tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.red {
+  background-color: #ffcccc;         /* Merah muda untuk status Off */
+  color: #b30000;                    /* Warna teks gelap untuk kontras */
+}
+
+.yellow {
+  background-color: #ffffcc;         /* Kuning muda untuk status 50% */
+  color: #b38600;                    /* Warna teks gelap untuk kontras */
+}
+
+.green {
+  background-color: #ccffcc;        /* Hijau muda untuk status 100% */
+  color: #006600;                   /* Warna teks gelap untuk kontras */
+}
+
+th {
+  background-color: #6a6e6c;        /*Warna background*/
+  color: white;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style responsivitas */
+@media (max-width: 600px) {
+  th, td {
+    padding: 8px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* Style untuk pagination */
+.pagination {
+  margin: 20px 0;
+  display: flex; /* Menggunakan flexbox untuk meratakan elemen */
+  justify-content: center; /* Menyelaraskan konten di tengah */
+}
+
+.pagination span {
+  color: white; /* Ganti dengan warna yang lebih kontras dengan latar belakang */
+  font-weight: bold; /* Opsional, untuk membuatnya lebih jelas */
+  margin-top: auto; /* Sesuaikan nilai untuk mengatur ketinggian */
+  display: inline-block; /* Tambahkan ini agar margin berlaku */
+}
+
+.pagination a {
+  padding: 10px 15px;
+  margin: 0 5px;
+  text-decoration: none;
+  background-color: #8f9391; /* Warna latar belakang link */
+  color: white;
+  border-radius: 5px; /* Sudut melengkung */
+  transition: background-color 0.3s, transform 0.2s; /* Transisi halus */
+}
+
+.pagination a.active {
+  background-color: #4CAF50; /* Warna aktif */
+}
+
+.pagination a:hover {
+  background-color: #555; /* Warna saat hover */
+  transform: scale(1.05); /* Efek pembesaran saat hover */
+}
